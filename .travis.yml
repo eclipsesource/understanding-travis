@@ -4,5 +4,6 @@ osx_image: xcode10.1
 
 before_install:
   - node --version
+  - npm --version
   - nvm --version
   - nvm ls
