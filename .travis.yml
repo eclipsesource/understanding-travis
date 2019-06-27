@@ -5,7 +5,7 @@ jdk:
 
 before_install:
   - nvm --version
-  - nvm install lts
+  - nvm install stable
   - node --version
   - npm --version
 
