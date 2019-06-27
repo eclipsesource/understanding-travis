@@ -3,7 +3,7 @@ language: objective-c
 osx_image: xcode10.1
 
 before_install:
+  - nvm --version
+  - nvm install stable
   - node --version
   - npm --version
-  - nvm --version
-  - nvm ls
