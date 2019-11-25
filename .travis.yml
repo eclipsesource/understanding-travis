@@ -7,3 +7,4 @@ before_install:
   - nvm install 'lts/*'
   - node --version
   - npm --version
+  - pod --version
