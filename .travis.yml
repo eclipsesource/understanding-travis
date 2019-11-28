@@ -5,8 +5,8 @@ osx_image: xcode10.1
 cache:
   directories:
   - $HOME/.cocoapods/repos/master/
-  
-before_install:
+
+script:
   - rvm use system
   - sudo gem install cocoapods -v '1.5.3'
   - if [ -d "~/.cocoapods/repos/master/" ]; then pod repo update; else rm -rf ~/.cocoapods/repos/master && pod setup; fi
