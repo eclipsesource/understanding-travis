@@ -9,4 +9,4 @@ cache:
 script:
   - rvm use system
   - sudo gem install cocoapods -v '1.5.3'
-  - if [ -d "~/.cocoapods/repos/master/" ]; then pod repo update; else rm -rf ~/.cocoapods/repos/master && pod setup; fi
+  - if [ -d "$HOME/.cocoapods/repos/master/" ]; then pod repo update; else rm -rf ~/.cocoapods/repos/master && pod setup; fi
