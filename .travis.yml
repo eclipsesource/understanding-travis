@@ -2,9 +2,11 @@ language: objective-c
 
 osx_image: xcode10.1
 
+cache:
+  directories:
+  - $HOME/.cocoapods/repos/master/
+  
 before_install:
-  - nvm --version
-  - nvm install 'lts/*'
-  - node --version
-  - npm --version
-  - pod --version
+  - rvm use system
+  - sudo gem install cocoapods -v '1.5.3'
+  - if [ -d "~/.cocoapods/repos/master/" ]; then pod repo update; else pod install; fi
